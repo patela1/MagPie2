@@ -7,8 +7,8 @@
  * 		    Handles responding to simple words and phrases 
  * </li></ul>
  * This version uses a nested if to handle default responses.
- * @author Laurie White
- * @version April 2012
+ * @author Avin Patel
+ * @version october 2014
  */
 public class Magpie2
 {
@@ -42,6 +42,11 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+        else if (statement.indexOf("cat") >=0
+                || statement.indexOf("dog") >=0)
+        {
+            response = "Tell me more about your pets";
+        }
 		else
 		{
 			response = getRandomResponse();
