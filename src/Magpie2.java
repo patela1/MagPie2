@@ -51,10 +51,9 @@ public class Magpie2
                 || statement.indexOf("Ms.") >=0)
            response = "Your teacher sound really cool";
 
-        else if (statement.indexOf(statement.length()) ==-1)
-        {
-            response = "Say something, please.";
-        }
+        else if (statement.trim().length() <1)
+            response = "Say something, please";
+
 		else
 		{
 			response = getRandomResponse();
